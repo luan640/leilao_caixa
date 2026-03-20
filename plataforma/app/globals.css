@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary: #8DC63F;
+  --color-background: #F2F3F7;
+  --color-surface: #FFFFFF;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --color-nav: #1A1A1A;
+}
+
+@theme inline {
+  --color-primary: #8DC63F;
+  --color-background: #F2F3F7;
+  --color-surface: #FFFFFF;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --font-sans: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #F2F3F7;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F3F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+.leaflet-container {
+  background: #E5E7EB !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+}
+
+.leaflet-popup-close-button {
+  color: #6B7280 !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #111827 !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background: #FFFFFF !important;
+  color: #111827 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #F9FAFB !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.85) !important;
+  color: #6B7280 !important;
+}
+
+.leaflet-control-attribution a {
+  color: #374151 !important;
+}
